@@ -1,16 +1,17 @@
-#include  <stdio.h>
+#include <stdio.h>
 
 /**
  * main - Entry point
  *
  * Return: Always 0 (Success)
  */
-int main (void)
+int main(void)
 {
 	int a = 0;
-	while (1 < 10)
+
+	while (a < 10)
 	{
-		printf("%d",a);
+		printf("%d", a);
 		a++;
 	}
 	putchar('\a');
