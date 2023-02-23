@@ -1,19 +1,19 @@
 #include "main.h"
 
-/* main - Entry point
- * Return: 0 (Success)
- * writing a function that prints the alphabets in lower case
- * and add a new line
+/**
+ * print_alphabet - write a program that prints alphabets in lower case
+ *
+ * Return: void
  */
+
 void print_alphabet(void)
 {
+	char c = 'a';
 	int i;
-	for (i = 97; i <= 122; i++);
+
+	for (i = 0; i < 26; i++)
 	{
-		_putchar(i);
+		_putchar(c + i);
 	}
-
-	_putchar('\n');
-
-	return (0);
+	_putchar(10);
 }
