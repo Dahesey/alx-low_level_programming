@@ -3,7 +3,7 @@
 /**
  * check lower case - check for lower case
  *
- * keyword _islower checks for lower case in characters
+ *  _islower checks for lower case in characters
  *
  * @c: is an integer representing ascii value of character
  *
