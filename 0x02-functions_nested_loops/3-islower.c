@@ -3,6 +3,10 @@
 /**
  * check lower case - check for lower case
  *
+ * keyword _islower checks for lower case in characters
+ *
+ * @c: is an integer representing ascii value of character
+ *
  * Return: 1 if lower or 0 if otherwise
  */
 
@@ -14,6 +18,6 @@ int _islower(int c)
 	}
 	else
 	{
-		return (0);
+return (0);
 	}
 }
