@@ -1,21 +1,23 @@
 #include "main.h"
+
 /**
- * main - entry point
- * Return: 0 (Success)
- * printing alphabets x10
+ * print_alphabet_x10 - writing a function that prints the 
+ * lowercase alphabet 10 times on new lines
+ *
+ * Return: void
  */
+
 void print_alphabet_x10(void)
 {
-	int c;
-	int d;
-	
-	for (c = 1; d <= 10; d++);
+	char c = 'a';
+	int i, j;
+
+	for (i = 0; i < 10; i++)
 	{
-		for (c = 97; c = 122; c++);
+		for (j = 0; j < 26; j++)
 		{
-			_putchar(c);
+			_putchar(c + j);
 		}
-		_putchar('\n');
-		
+		_putchar(10);
 	}
 }
