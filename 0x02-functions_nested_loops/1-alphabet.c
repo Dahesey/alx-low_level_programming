@@ -5,7 +5,7 @@
  * writing a function that prints the alphabets in lower case
  * and add a new line
  */
-void print_alphabet(void);
+void print_alphabet(void)
 {
 	int i;
 	for (i = 97; i <= 122; i++);
