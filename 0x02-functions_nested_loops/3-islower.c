@@ -1,4 +1,4 @@
-#include "main"
+#include "main.h"
 
 /**
  * check lower case - check for lower case
