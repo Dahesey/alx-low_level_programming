@@ -1,18 +1,18 @@
 #include "main.h"
 
 /**
- * print_numbers - prints from 0 to 10
+ * print_numbers - prints numbers from 0 to 10
  *
- * Return: 0 (Success)
+ * Return: void
  */
 void print_numbers(void)
 {
-	int i = 48;
+	int b = 48;
 	
-	while (i < 58)
+	while (b < 58)
 	{
-		_putchar(i);
-		i++;
+		_putchar(b);
+		b++;
 	}
 	_putchar('\n');
 }
