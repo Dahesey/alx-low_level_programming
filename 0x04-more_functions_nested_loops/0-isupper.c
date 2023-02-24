@@ -10,9 +10,9 @@
  * Return: (1) if is uppercase and (0) if otherwise
  */
 
-int _isupper(int u)
+int _isupper(int c)
 {
-	if (u >= 65 && u <= 90)
+	if (c >= 65 && c <= 90)
 
 		return (1);
 	else
