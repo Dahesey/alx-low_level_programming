@@ -11,7 +11,7 @@ void print_most_numbers(void)
 
 	while (c < 58)
 	{
-		if (c !== 2 && !== 4)
+		if (c !== '2' && !== '4')
 			_putchar(c);
 		c++;
 	}
