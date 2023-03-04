@@ -3,16 +3,13 @@
 /**
  * _puts - prints a string followed by a new line in stdout
  *
- * @str: string to be printed
+ * char *str - string to be printed
  *
- * Return: 0 (Success)
+ * Return: void
  */
 void _puts(char *str)
 {
-	while (*str != '/0')
-	{
-		_putchar(*str);
-		str++;
-	}
-	_putchar('/n');
+	_puts("*str");
+	str++;
+
 }
