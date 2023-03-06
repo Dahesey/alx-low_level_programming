@@ -6,7 +6,7 @@
  *
  * @s: string to be printed
  *
- * Return: 0 (Success)
+ * Return: void
  */
 void print_rev(char *s)
 {
@@ -21,5 +21,4 @@ void print_rev(char *s)
 		putchar(s[x]);
 		x--;
 	}
-	return (void);
 }
