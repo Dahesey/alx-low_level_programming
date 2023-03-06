@@ -21,5 +21,5 @@ void print_rev(char *s)
 		putchar(s[x]);
 		x--;
 	}
-	return (0);
+	return (void);
 }
