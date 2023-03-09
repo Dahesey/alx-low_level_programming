@@ -7,7 +7,7 @@
  *
  * Return: -1 if n < 0 and factorial of n if n > 0. factorial 0 is 1
  */
-int factorial(int n);
+int factorial(int n)
 {
 	int res;
 	
@@ -22,6 +22,6 @@ int factorial(int n);
 		return (1);
 	}
 
-	res * factorial(n - 1);
+	res *= factorial(n - 1);
 	return (res);
 }
