@@ -2,7 +2,7 @@
 
 /**
  * factorial - returns the factorial of a number
- * 
+ *
  * @n: number to be printed
  *
  * Return: -1 if n < 0 and factorial of n if n > 0. factorial 0 is 1
