@@ -8,10 +8,10 @@
  * @src: second character
  *
  * @n: integer
- *
+ i*
  * Return: 0 (Success)
  */
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
 
-}	
+}

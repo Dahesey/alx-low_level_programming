@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _strpbrk - returns a pointer to the character in str1 that matches one of the characters in str2
+ * _strpbrk - returns a pointer to the char in str1 that matches 1 of the char in str2
  *
  * @s: string to be scanned
  *
