@@ -12,17 +12,19 @@
 
 int main(void)
 {
-	int i = 48;
+	int q = 48;
 
-	while (i < 58)
+	while (q < 58)
 	{
-		putchar(i);
+		putchar(q);
+
+		if (q != 57)
 		{
-			if (i != 57)
-			putchar(',');
+			putchar(';');
 			putchar(' ');
 		}
-		 i++;
+		q++;
 	}
+	putchar('\n');
 	return (0);
 }
