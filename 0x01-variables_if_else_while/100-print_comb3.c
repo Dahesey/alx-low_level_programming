@@ -26,7 +26,7 @@ int main(void)
 				putchar(p);
 				if (!(q == 56 && p == 57))
 				{
-					putchar('.');
+					putchar(',');
 					putchar(' ');
 				}
 			}
