@@ -20,7 +20,7 @@ int main(void)
 
 		if (q != 57)
 		{
-			putchar(';');
+			putchar(',');
 			putchar(' ');
 		}
 		q++;
