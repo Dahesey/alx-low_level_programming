@@ -1,7 +1,7 @@
 /**
  * main - Entry point
  *
- * print_alphabet - Prints alphabets in lowercase
+ * print_alphabet(void) - Prints alphabets in lowercase
  *
  * Author - Dahesey
  *
