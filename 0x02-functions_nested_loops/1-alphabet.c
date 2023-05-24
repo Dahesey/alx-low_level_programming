@@ -1,11 +1,11 @@
 /**
  * main - Entry point
  *
- * _putchar - prints char and strings
- *
- * @print_alphabet - function that prints alphabets in lowercase
+ * print_alphabet - Prints alphabets in lowercase
  *
  * Author - Dahesey
+ *
+ * Return: (0)
  */
 
 #include "main.h"
