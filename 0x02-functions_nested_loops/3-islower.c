@@ -3,6 +3,8 @@
  *
  * Author - Dahesey
  *
+ * @c: char to be printed
+ *
  * Return: (1) if success (0) otherwise
  */
 
