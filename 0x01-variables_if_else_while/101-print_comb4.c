@@ -24,26 +24,20 @@ int main(void)
 			z = 48;
 			while (z < 58)
 			{
-				if (x != 56 && x < 57)
+				if (x != y && x != z && y !=z && x < y && y < z)
 				{
 					putchar(x);
 					putchar(y);
 					putchar(z);
-					if (y != 56 && x < 57)
+					if (!(x == 55 && y == 56 && z == 57))
 					{
-						putchar(x);
-						putchar(y);
-						putchar(z);
-						if (!(x == 55 && y == 56 && z == 57))
-						{
-							putchar(',');
-							putchar(' ');
-						}
+						putchar(',');
+						putchar(' ');
 					}
-					z++;
 				}
-				y++;
+				z++;
 			}
+			y++;
 		}
 		x++;
 	}
