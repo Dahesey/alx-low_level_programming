@@ -3,7 +3,7 @@
  *
  * _putchar - prints char and strings
  *
- * print_alphabet - function that prints alphabets in lowercase
+ * @print_alphabet - function that prints alphabets in lowercase
  *
  * Author - Dahesey
  */
