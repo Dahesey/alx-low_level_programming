@@ -3,9 +3,9 @@
  *
  * Author - Dahesey
  *
- * @larg: largest prime number to be returned
+ * larg: largest prime number to be returned
  *
- * return: (0)
+ * Return: (0)
  */
 
 #include <stdio.h>
