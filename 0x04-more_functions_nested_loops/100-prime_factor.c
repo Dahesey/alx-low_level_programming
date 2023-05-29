@@ -3,7 +3,7 @@
  *
  * Author - Dahesey
  *
- * @n: number to be printed
+ * @larg: largest prime number to be returned
  *
  * return: (0)
  */
