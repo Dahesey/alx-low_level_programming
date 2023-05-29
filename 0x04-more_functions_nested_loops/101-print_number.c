@@ -15,12 +15,12 @@ void print_number(int n)
 	int d = 1;
 	int t = n;
 
-	if (n < 0) 
+	if (n < 0)
 	{
 		_putchar('-');
 		n = -n;
 	}
-	
+
 	while (t / 10 != 0)
 	{
 		d *= 10;
@@ -29,6 +29,7 @@ void print_number(int n)
 	while (d != 0)
 	{
 		int digit = n / d;
+
 		_putchar('0' + digit);
 		n %= d;
 		d /= 10;
