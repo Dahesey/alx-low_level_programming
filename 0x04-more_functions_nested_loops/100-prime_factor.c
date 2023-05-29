@@ -14,7 +14,7 @@
 int main(void)
 {
 	int i;
-	int larg = -1;
+	long int larg = -1;
 	long int n = 612852475143;
 
 	while (n % 2 == 0)
@@ -34,5 +34,6 @@ int main(void)
 	{
 		larg = n;
 	}
+	printf("%ld\n", larg);
 	return (larg);
 }
