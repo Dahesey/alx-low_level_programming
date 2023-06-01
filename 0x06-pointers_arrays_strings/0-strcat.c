@@ -3,9 +3,9 @@
  *
  * Author - Dahesey
  *
- * @dest - first string
+ * @dest: first string
  *
- * @src - second string
+ * @src: second string
  *
  * Return: pointer
  */
@@ -25,5 +25,5 @@ char *_strcat(char *dest, char *src)
 		t++;
 	}
 	dest[t] = '\0';
-	return(dest);
+	return (dest);
 }
