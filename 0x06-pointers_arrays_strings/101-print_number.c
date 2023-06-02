@@ -12,13 +12,15 @@
 
 void print_number(int n)
 {
-	int d = 1;
-	int t = n;
+	unsigned int d = 1;
+	unsigned int t = n;
+	unsigned int num = n;
 
 	if (n < 0)
 	{
 		_putchar('-');
 		n = -n;
+		t = -t;
 	}
 
 	while (t / 10 != 0)
@@ -28,10 +30,10 @@ void print_number(int n)
 	}
 	while (d != 0)
 	{
-		int digit = n / d;
+		int digit = num / d;
 
 		_putchar('0' + digit);
-		n %= d;
+		num %= d;
 		d /= 10;
 	}
 }
