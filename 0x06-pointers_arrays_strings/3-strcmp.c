@@ -3,7 +3,7 @@
  *
  * Author -Dahesey
  *
- * @S1: first string
+ * @s1: first string
  *
  * @s2: second string
  *
@@ -21,4 +21,4 @@ int _strcmp(char *s1, char *s2)
 		c++;
 	}
 	return (0);
-}		
+}
