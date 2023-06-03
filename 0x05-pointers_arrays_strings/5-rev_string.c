@@ -14,16 +14,16 @@ void rev_string(char *s)
 {
 	int x = 0;
 	int y = 0;
-	char *p;
+	char *p = s;
 
-	for (*p = s; s != '\0'; s++)
+	for (; *s != '\0'; s++)
 		x++;
-	for (; j < i / 2; j++)
+	for (; y < x / 2; y++)
 	{
 		char keep;
 
 		keep = *--s;
-		*p = *s;
+		*s = *p;
 		*p++ = keep;
 	}
 }
