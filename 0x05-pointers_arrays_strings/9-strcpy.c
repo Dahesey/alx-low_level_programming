@@ -5,7 +5,7 @@
  *
  * Author - dahesey
  *
- * @src - pointer to a string
+ * @src: pointer to a string
  *
  * Return: dest(The pointer)
  */
