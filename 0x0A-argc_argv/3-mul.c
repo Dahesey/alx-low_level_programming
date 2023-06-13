@@ -17,7 +17,7 @@ int main(int argc, char *argv[])
 	long int mul = 1;
 	int d;
 
-	if (argc > 3)
+	if (argc == 2)
 	{
 		printf("Error\n");
 		return (1);
