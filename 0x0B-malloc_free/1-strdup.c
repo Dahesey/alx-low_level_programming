@@ -3,7 +3,7 @@
  *
  * Author - Dahesey
  *
- * @str - string to be duplicated
+ * @str: string to be duplicated
  *
  * Return: A pointer
  */
