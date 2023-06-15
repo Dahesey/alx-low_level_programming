@@ -38,6 +38,8 @@ char *str_concat(char *s1, char *s2)
 	if (s1 != NULL)
 		for (x = 0; s1[x] != '\0'; x++)
 			char_pointer[x] = s1[x];
+	if (s1 == NULL)
+		x = 0;
 	if (s2 != NULL)
 		for (y = 0; s2[y] != '\0'; y++)
 		{
