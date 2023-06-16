@@ -31,11 +31,11 @@ int **alloc_grid(int width, int height)
 	}
 	for (index = 0; index < height; index++)
 	{
-		*(a + index) = (int *)malloc(sizeof(int *) * width);
-		if (*(a + index) == 0)
+		a[index] = (int *)malloc(sizeof(int *) * width);
+		if (a[index] == 0)
 		{
 			for (x = 0; x < index; x++)
-			free(*(a + index));
+			free(a[index]);
 			free(a);
 			return (0);
 		}
