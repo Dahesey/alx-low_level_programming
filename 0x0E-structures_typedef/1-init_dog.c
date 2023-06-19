@@ -3,13 +3,13 @@
  *
  * Author - Dahesey
  *
- * @struct dog *d: A pointer to structure
+ * @d: A pointer to structure
  *
- * @name: First element of structure
+ * @name: A pointer to  element of structure
  *
  * @age: Second element of structure
  *
- * @owner: Third element of structure
+ * @owner: A pointer to element of structure
  */
 
 #include <stdio.h>
