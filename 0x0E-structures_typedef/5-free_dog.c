@@ -1,5 +1,5 @@
 /**
- * free_dog - function that free memory that has previously been allocated dynamically using malloc
+ * free_dog - function that free memory that was allocated using malloc
  *
  * Author - dahesey
  *
