@@ -9,7 +9,7 @@
  *
  * @cmp: pointer to function
  *
- * Return: (-1) if NULL 
+ * Return: (-1) if NULL
  */
 
 #include <stdio.h>
