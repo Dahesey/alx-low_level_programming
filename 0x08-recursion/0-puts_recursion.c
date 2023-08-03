@@ -1,5 +1,5 @@
 /**
- * puts_recursion - A function that callss itself to print a string
+ * _puts_recursion - A function that callss itself to print a string
  *
  * Author - dahesey
  *
