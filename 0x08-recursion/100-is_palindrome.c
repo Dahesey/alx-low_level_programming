@@ -34,7 +34,7 @@ int ch_match(const char *s1, const char *s2)
 int is_palindrome(char *s)
 {
 	int len = strlen(s);
-	
+
 	if (*s == '\0')
 		return (1);
 	else
