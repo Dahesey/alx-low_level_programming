@@ -29,6 +29,8 @@ int main(int argc, char *argv[])
 				printf("Error\n");
 			}
 		}
+	return (1);
+
 	if (argc > 1)
 	{
 		for (d = 0; d < argc; d++)
