@@ -5,7 +5,6 @@
   * @name: Char element of structure
   * @age: Int element of structure
   * @owner: Char element of structure
-  * Return: 0
   */
 
 #include <stdio.h>
