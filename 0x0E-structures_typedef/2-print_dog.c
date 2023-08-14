@@ -2,7 +2,7 @@
   * print_dog - A function to print a dog's details
   * @d: A pointer to a struct
   * Author - Dahesey
-  * Return: NULL if d is NULL and Nil if name,age,owner are null 
+  * Return: NULL if d is NULL and Nil if name,age,owner are null
   */
 #include <stdlib.h>
 #include "dog.h"
@@ -22,6 +22,6 @@ void print_dog(struct dog *d)
 		if (d->owner == NULL)
 			printf("Owner: (nil)\n");
 		else
-			printf("Owner: %s\n", d->owner);	
+			printf("Owner: %s\n", d->owner);
 	}
 }
