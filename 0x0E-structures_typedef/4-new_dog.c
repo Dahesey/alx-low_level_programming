@@ -6,18 +6,28 @@
   * Author: dahesey
   */
 
-#include <stdio.h>
+#include <string.h>
 #include "dog.h"
-#include <stdlib>
+#include <stdlib.h>
 
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	char *p;
+	dog_t *pointer;
 
-	if (p != NULL)
-	{
-		p->name = name;
-		p->age = age;
-		p->owner = owner;
-	}
+	if (name == NULL || age < 0 || owner == NULL)
+		return (NULL);
+	pointer = malloc (sizeof (dog_t));
+	if (pointer == NULL)
+		return (NULL);
+	pointer->name = malloc(sizeof(char) * strlen(name) + 1);
+	if (pointer->name == NULL)
+		free(pointer);
+		return(NULL);
+	pointer->owner = malloc(sizeof(char) * strlen(owner) + 1);
+	if (pointer->owner == NULL)
+		free(pointer->name);
+		free(pointer);
+		return (NULL);
+	pointer->age = age;
+	return (pointer);
 }
