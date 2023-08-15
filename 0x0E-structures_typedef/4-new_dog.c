@@ -4,6 +4,7 @@
   * @age: second element of the struct
   * @owner: third element of the struct
   * Author: dahesey
+  * Return: Null if function fails
   */
 
 #include <string.h>
@@ -23,7 +24,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 	if (pointer->name == NULL)
 	{
 		free(pointer);
-		return(NULL);
+		return (NULL);
 	}
 	pointer->owner = malloc(sizeof(char) * strlen(owner) + 1);
 	if (pointer->owner == NULL)
