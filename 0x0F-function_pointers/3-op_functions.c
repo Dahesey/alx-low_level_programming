@@ -1,6 +1,6 @@
 /**
-  * opp_add - A functiont o add two integers
-  * @a: The first integer 
+  * op_add - A functiont o add two integers
+  * @a: The first integer
   * @b: The second integer
   * Return: results
   */
