@@ -1,12 +1,13 @@
 /**
   * add_node - A function to add nodes to a linked list
   * @head: The head of the list that points to a pointer
-  * @s: A pointer to the nodes
-  * Return: A pointer to the new node added
+  * @str: The pointer string to be added
+  * Return: AA pointer to the new node added or NULL if fail
   */
 #include "lists.h"
 list_t *add_node(list_t **head, const char *s)
 {
+	list_t **pointer;
 	list_t *new_node;
 
 	new_node = malloc(sizeof(list_t));
@@ -16,8 +17,10 @@ list_t *add_node(list_t **head, const char *s)
 		s = "";
 	new_node->str = strdup(s);
 	new_node->len = strlen(s);
-
-	new_node->next = *head;
-	*head = new_node;
+	
+	for (pointer = head; *pointer != NULL; pointer = &(**pointer).next)
+		;
+	*pointer = new_node;
+	new_node->next = NULL;
 	return (new_node);
 }
