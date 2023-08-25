@@ -1,5 +1,5 @@
 /**
-  * add_node - A function to add nodes to a linked list
+  * add_node_end - A function to add nodes to a linked list
   * @head: The head of the list that points to a pointer
   * @s: The pointer string to be added
   * Return: AA pointer to the new node added or NULL if fail
