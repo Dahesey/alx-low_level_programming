@@ -8,13 +8,14 @@
 int create_file(const char *filename, char *text_content)
 {
 	int descript, chars, wr;
+	mode_t perms = S_IRUSR | S_IWUSR;
 
 	if (!filename)
 		return (-1);
 	if (!text_content)
-		return (1);
-	descript = open(filename, O_CREAT | O_WRONLY | O_TRUNC, 600);
-	if (descript == NULL)
+		text_content = "";
+	descript = open(filename, O_CREAT | O_WRONLY | O_TRUNC, perms);
+	if (descript < 0)
 		return (-1);
 	for (chars = 0; text_content[chars]; chars++)
 		;
