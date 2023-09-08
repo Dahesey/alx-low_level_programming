@@ -10,12 +10,12 @@ int create_file(const char *filename, char *text_content)
 	int descript, chars, wr;
 
 	if (!filename)
-		return (0);
-	descript = open(filename, O_CREAT | O_WRONLY | O_TRUNC, 600);
-	if (descript == -1)
 		return (-1);
 	if (!text_content)
-		text_content = "";
+		return (1);
+	descript = open(filename, O_CREAT | O_WRONLY | O_TRUNC, 600);
+	if (descript == NULL)
+		return (-1);
 	for (chars = 0; text_content[chars]; chars++)
 		;
 
