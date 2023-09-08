@@ -10,7 +10,7 @@ int create_file(const char *filename, char *text_content)
 	int descript, chars, wr;
 
 	if (!filename)
-		return (-1);
+		return (1);
 	descript = open(filename, O_CREAT | O_WRONLY | O_TRUNC, 600);
 	if (descript == -1)
 		return (-1);
