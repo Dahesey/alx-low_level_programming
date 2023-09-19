@@ -1,48 +1,48 @@
 /**
- * get_pow - calculates the value of x to the power y
- * @x: an integer.
- * @y: the exponent of x.
- * Return: x to the power y.
+ * _pow - raises a number to a power
+ * @a: base number
+ * @b: power to raise the base/number to. (a ^ b)
+ * Return: the result of a raised to the power b.
  */
-
-#include "main.h"
-
-unsigned long int get_pow(int x, int y)
+unsigned int _pow(unsigned int a, unsigned int b)
 {
-	if (y == 1)
-		return (x);
-	else if (y == 0)
-		return (1);
-	else
-		return (x * get_pow(x, y - 1));
+	return ((a == 1) ? a : ((b == 0) ? 1 : a * _pow(a, b - 1)));
 }
 
 /**
- * binary_to_uint - converts a binary number to an unsigned int.
- * @b: a pointer to a string of 0 and 1 characters.
- * Return: the converted number or 0
+ * _strlen - gets the lenght of a string
+ * @s: the passed string
+ * Return: length of the string
+ */
+int _strlen(const char *s)
+{
+	int i = 0;
+
+	for (; s[i]; i++)
+		;
+	return (i);
+}
+
+/**
+ * binary_to_uint - converts binary to unsigned int
+ * @b: pointer to a string of 0 and 1 chars to be converted
+ * Return: converted num or 0 if there is one or more chars in
+ * the string b that is not 0 or 1 of if b is NULL
  */
 unsigned int binary_to_uint(const char *b)
 {
-	const char *ptr = b;
-	int bit_set = FALSE, len;
-	int expo = 0;
-	int number = 0;
+	int i, bits, len, bin = 0;
 
-	if (b == NULL)
+	if (!b)
 		return (0);
-	for (len = 0; ptr[len]; len++)
-	{
-		if (ptr[len] != '0' && ptr[len] != '1')
-			return (0);
-		if (ptr[len] == '1' && !bit_set)
-			bit_set = len + 1;
-	}
-	expo = len - bit_set;
-	ptr += (bit_set - 1);
 
-	for (; *ptr; expo--, ptr++)
-		if (*ptr == '1')
-			number += get_pow(BIN, expo);
-	return (number);
+	len = _strlen(b);
+	for (i = (len - 1); i >= 0; i--)
+	{
+		if (b[i] != '0' && b[i] != '1')
+			return (0);
+		bits = b[i] - '0';
+		bin += bits * _pow(2, (len - 1) - i);
+	}
+	return (bin);
 }
