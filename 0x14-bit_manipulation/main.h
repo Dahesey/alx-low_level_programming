@@ -3,7 +3,7 @@
 
 
 #include <stdlib.h>
-#include <stdio.h> 
+#include <stdio.h>
 
 #define FALSE 0
 #define BIN 2
