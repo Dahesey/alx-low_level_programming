@@ -1,5 +1,6 @@
 /**
- * key_index - A function to return the index of a key inserted into a hash table
+ * key_index - A function to return the index of
+ * a key inserted into a hash table
  *
  * Author - Dahesey
  *
@@ -7,7 +8,7 @@
  *
  * @size: Size of the array in the hash table
  *
- * Return: The index at which the key will be stored in the array 
+ * Return: The index at which the key will be stored in the array
  */
 
 #include "hash_tables.h"

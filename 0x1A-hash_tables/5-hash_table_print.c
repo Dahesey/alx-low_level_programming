@@ -13,13 +13,14 @@ void hash_table_print(const hash_table_t *ht)
 {
 	unsigned long int a;
 	int print = 0;
+	hash_node_t *current;
 
 	if (ht == NULL)
 		return;
 	printf("{");
 	for (a = 0; a < ht->size; a++)
 	{
-		hash_node_t *current = ht->array[a];
+		current = ht->array[a];
 		while (current != NULL)
 		{
 			if (print)
